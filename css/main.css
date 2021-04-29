@@ -31,7 +31,7 @@ h4 { font-size: 20px; }
 #gnb { background-color: #282A35; font-size: 0; }
 #gnb #html { background-color: #059862; }
 #gnb ul { overflow: hidden; display: inline-block; }
-#gnb ul li { float: left; font-size: 17px; padding: 10px 15px 9px 15px; color: white; width: auto; font-family: 'Source Sans Pro', sans-serif; font-weight: bold; }
+#gnb ul li { float: left; font-size: 17px; padding: 10px 13px 9px 13px; color: white; width: auto; font-family: 'Source Sans Pro', sans-serif; font-weight: bold; }
 #gnb ul li:hover { background: #000; cursor: pointer; }
 #gnb #home1 { padding: 13px 17px 4px 17px; }
 #home1 .home2 { width: 20px; height: 21px; padding: 0; filter: brightness(200%); }
@@ -123,7 +123,7 @@ h4 { font-size: 20px; }
 #main .brt5:hover {  }
 
 /*section6*/
-.blue_brt { margin: 18px 0; background-color: #2196F3; color: #fff; padding: 8px 16px; }
+.blue_brt { margin: 18px 0; background-color: #2196F3; color: #fff; padding: 8px 16px; border-radius: 4px; }
 .blue_brt:hover { cursor: pointer; background-color: #0D8BF2; }
 
 /*section7*/

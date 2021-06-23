@@ -1,0 +1,306 @@
+/*common*/
+body
+.center { text-align: center; }
+h1 { font-size: 40px; font-weight: bold; font-family: "맑은 고딕 Semilight"; }
+
+/*header*/
+#header_wrap { position: absolute; width: 100%; z-index: 2;}
+#util_wrap { background-color: #05141F; color: rgba(255,255,255,0.6); padding-top: 5px; }
+.util { overflow: hidden; display: inline-block; }
+.util.left { margin-left: 40px; }
+.util li { padding: 9px 15px 8px 15px; font-size: 12px; padding: 4px; }
+.util li span { padding: 0 8px; }
+.util li span:hover { cursor: pointer; text-decoration: underline; color: white; }
+.left li { float: left; }
+.util.right { float: right; margin-right: 40px; }
+.util.right li { float: right; }
+
+/*gnb - header*/
+#gnb { text-align: center; background-color: rgba(255, 255, 255, 0); color: white; font-weight: bold; border-bottom: 1px solid white; }
+.gnb { display: inline-block; }
+.gnb li { padding: 16px; font-size: 17px; }
+.gnb li:hover { cursor: pointer; text-decoration: underline; }
+.logo { display: inline-block; margin: 20px 10px 10px 10px; width: 100px;}
+.logo:hover { cursor: pointer; }
+.down { display: none; }
+#gnb .left { float: left; margin-left: 30px;}
+#gnb .right { float: right; margin-right: 30px;}
+#gnb .right li { float: right; }
+
+/*contents*/
+/*new_car_slider*/
+#blank { height: 36px; }
+/*paging*/
+#new_car_slider ul#visualPaging { width: 100%; height: 30px; position: absolute; bottom: 33%; text-align: center; z-index: 1;}
+#new_car_slider ul#visualPaging li.dot { display: inline-block; font-size: 18px; color: #ECECEC; margin: 0 5px; cursor: pointer; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #777171; position: relative; bottom: 20%;}
+#new_car_slider ul#visualPaging li.dot.on { color: #05141F; }
+#new_car_slider ul#visualPaging .pBtnNewCar { position: relative; bottom: 0;}
+
+/*play and pause*/
+ul .pauseNewCar { width: 23px; display: inline-block; cursor: pointer; }
+ul .playNewCar { width: 23px; display: inline-block; cursor: pointer; }
+ul .off { display: none; }
+
+/*visual*/
+#new_car_slider { overflow: hidden; position: relative; width: 100%; height: 800px; padding-bottom: 170px; }
+#new_car_slider > ul#visualImgCon { width: 100%; height: 100%; position: relative; }
+#new_car_slider > ul#visualImgCon > li.scene { width: 100%; height: 100%; position: absolute; left: 0; top: 0; background-size: cover; background-repeat: no-repeat; }
+
+/*text*/
+#visualImgCon li .under_text { text-align: center; font-size: 40px; margin-top: 0;  }
+#visualImgCon li .inner_text { text-align: center; font-size: 40px; margin-top: 100px; }
+#visualImgCon li .whiteEx { color: white; text-shadow: 1px 1px 1px black; font-weight: bold; }
+#visualImgCon li .blackEx { text-shadow: 1px 1px 1px black; }
+
+/*Btn*/
+#visualImgCon li .newCarBtn { display: inline-block; padding: 5px 20px; background-color: white; color: black; font-size: 18px; position: relative; z-index: 2; cursor: pointer; }
+#visualImgCon li .ev6_site { top: 5%; left: 38%; }
+#visualImgCon li .ev6_price { top: 5%; left: 39%; }
+#visualImgCon li .sportage_new { top: 5%; left: 43%; color: white; background-color: #05141F; }
+#visualImgCon li .k9Btn { top: 5%; left: 44%; color: white; background-color: #05141F; }
+#visualImgCon li .k8Btn { top: 5%; left: 45%; color: white; background-color: #05141F; }
+#visualImgCon li .k3Btn { top: 3%; left: 45%; }
+#visualImgCon li .k5Btn { top: 3%; left: 45%; padding: 5px 35px; }
+#visualImgCon li .whiteBtn:hover { background-color: #05141F; color: white; }
+#visualImgCon li .blackBtn:hover { background-color: white; color: black; }
+
+
+/*visual images*/
+#new_car_slider > ul#visualImgCon > li.scene.img_ev6_red { left: 0; background-image: url("../img/newCar/ev6redNew.png"); }
+#new_car_slider > ul#visualImgCon > li.scene.img_sportage { left: 100%; background-image: url("../img/newCar/sportage_new.png"); }
+#new_car_slider > ul#visualImgCon > li.scene.img_k9 { left: 200%; background-image: url("../img/newCar/k9_new.png"); }
+#new_car_slider > ul#visualImgCon > li.scene.img_k8side { left: 300%; background-image: url("../img/newCar/k8side_new.png"); }
+#new_car_slider > ul#visualImgCon > li.scene.img_k3 { left: 400%; background-image: url("../img/newCar/k3New.png"); }
+#new_car_slider > ul#visualImgCon > li.scene.img_k8 { left: 400%; background-image: url("../img/newCar/k8_new.png"); }
+#new_car_slider > ul#visualImgCon > li.scene.img_k5 { left: 400%; background-image: url("../img/newCar/k5.webp"); }
+#new_car_slider > ul#visualImgCon > li.scene.img_cdp { left: 400%; background-image: url("../img/newCar/cdp_new.png"); }
+
+/*arrow*/
+.arrow { top: 44%; cursor: pointer; z-index: 2; position: absolute; width: 40px; }
+.arrow_right {  left: 94%; }
+.arrow_left { left: 3%; }
+
+/*btn_interval*/
+#btn_interval { text-align: center; position: absolute; bottom: 11%; z-index: 2; left: 17%; }
+#btn_interval ul { overflow: hidden; text-align: center; margin: 0 auto; display: inline-block; }
+#btn_interval ul li { float: left; width: 200px; height: 130px; background-color: white; text-align: center; border: 1px #777171 solid; padding-top: 40px; font-weight: bold; }
+#btn_interval ul li img { width: 50px; }
+#btn_interval ul li:hover { cursor: pointer; background-color: #05141F; color: white; }
+
+
+/*allCar*/
+/*paging*/
+#allCar h1 { position: absolute; left: 53%; top: 0; }
+#allCar ul#allCarPaging { width: 100%; height: 30px; position: absolute; bottom: 10%; text-align: center; z-index: 3; left: 8%; }
+#allCar ul#allCarPaging li.dot2 { display: inline; font-size: 15px; color: #ECECEC; margin: 0 5px; cursor: pointer; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #777171; position: relative; bottom: 20%; }
+#allCar ul#allCarPaging li.dot2.on { color: #05141F; }
+ul .pauseAllCar { width: 23px; display: inline-block; cursor: pointer; }
+ul .playAllCar { width: 23px; display: inline-block; cursor: pointer; }
+ul .off { display: none; }
+
+/*visual*/
+#allCar { overflow: hidden; position: relative; width: 115%; height: 500px; padding-bottom: 130px; left: -15%; }
+#allCar > ul#visualImgCon2 { width: 400px; height: 240px; position: relative; }
+#allCar > ul#visualImgCon2 > li { width: 100%; height: 100%; position: absolute; left: 0; top: 45%; background-size: cover; background-repeat: no-repeat; }
+#allCar > ul#visualImgCon2 .bigger { transform: scale(1.2); }
+#allCar > ul#visualImgCon2 >.notOver:hover { transform: scale(1.1);  }
+
+/*visual images*/
+#allCar .img_common_k8 { left: 0%; background-image: url("../img/commonCar/k8.webp"); }
+#allCar .img_common_carnival { left: 100%; background-image: url("../img/commonCar/carnival.webp"); }
+#allCar .img_common_seltos { left: 200%; background-image: url("../img/commonCar/seltos.webp"); }
+#allCar .img_common_k3 { left: 300%; background-image: url("../img/commonCar/k3.webp"); }
+#allCar .img_common_mohave { left: 400%; background-image: url("../img/commonCar/mohave.webp"); }
+#allCar .img_common_sorento { left: 500%; background-image: url("../img/commonCar/sorento.webp"); }
+#allCar .bluring { opacity: 0.5; }
+
+/*arrow2*/
+.arrow2 { top: 20%; cursor: pointer; z-index: 2; position: absolute; width: 30px; }
+.arrow_right_gray {  left: 94%; }
+.arrow_left_gray { left: 15%; }
+
+/*explain*/
+.blank_box { height: 270px; }
+.plus:hover { cursor: pointer; }
+.car_name { text-align: center; font-size: 25px; }
+.explain { text-align: center; font-size: 12px; }
+
+/*payment*/
+.payment { text-align: center; font-size: 13px; padding-top: 10px;}
+.divide { opacity: 0.7; }
+
+/*content3 Event*/
+#event { position: relative; height: 800px; }
+
+/*left_event*/
+/*paging*/
+#left_Event ul#eventPaging { width: 100%; height: 30px; position: absolute; bottom: 23%; text-align: right; z-index: 1; }
+#left_Event ul#eventPaging li.eventDot { display: inline-block; font-size: 13px; color: #ECECEC; margin: 0 2px; cursor: pointer; text-shadow: 1px 1px 1px black; position: relative; bottom: 20%; }
+#left_Event ul#eventPaging li.eventDot.on { color: black; }
+ul .pauseEvent { width: 23px; display: inline-block; cursor: pointer; }
+ul .playEvent { width: 23px; display: inline-block; cursor: pointer; }
+ul .off { display: none; }
+
+/*visual*/
+#left_Event { overflow: hidden; position: relative; width: 44%; height: 600px; margin-left: 95px;}
+#left_Event > ul#eventImgCon { width: 670px; height: 390px; position: relative; }
+#left_Event > ul#eventImgCon > li.event { width: 100%; height: 100%; position: absolute; left: 0; top: 0; background-size: cover; background-repeat: no-repeat; }
+
+/*visualImg*/
+#left_Event > ul#eventImgCon > li.eSportage { left: 0%; background-image: url("../img/event/event_sportage.webp"); }
+#left_Event > ul#eventImgCon > li.e5000 { left: 0%; background-image: url("../img/event/event_5000.webp"); }
+#left_Event > ul#eventImgCon > li.ePresent { left: 0%; background-image: url("../img/event/event_present.webp"); }
+#left_Event > ul#eventImgCon > li.eCare { left: 0%; background-image: url("../img/event/event_care.webp"); }
+#left_Event > ul#eventImgCon > li.eK8 { left: 0%; background-image: url("../img/event/event_k8.webp"); }
+
+/*text*/
+.eventBlankBox { height: 450px; }
+.eventBlankBox:hover { cursor: pointer; }
+.eventName { text-align: left; font-size: 24px; margin-left: 50px; font-weight: bold; }
+.eventName:hover { cursor: pointer; text-decoration: underline; }
+.duration { text-align: left; font-size: 14px; margin-left: 50px; opacity: 0.7; margin-top: 10px; }
+.duration:hover { cursor: pointer; }
+.duration span { font-weight: bold; }
+
+/*eventArrow*/
+#left_Event > img.arrow { width: 25px; top: 50%; }
+#left_Event > img.arrow_right { left: 92%; }
+#left_Event > img.arrow_left { left: 3%; }
+
+/*Channel*/
+/*paging*/
+#right_channel ul#channelPaging { width: 100%; height: 30px; position: absolute; bottom: 20%; text-align: right; z-index: 4; }
+#right_channel ul#channelPaging li.channelDot { display: inline-block; font-size: 13px; color: #ECECEC; margin: 0 2px; cursor: pointer; text-shadow: 1px 1px 1px black; position: relative; bottom: 20%;}
+#right_channel ul#channelPaging li.channelDot.on { color: black; }
+ul .pauseChannel { width: 23px; display: inline-block; cursor: pointer; }
+ul .playChannel { width: 23px; display: inline-block; cursor: pointer; }
+ul .off { display: none; }
+
+/*visual*/
+#right_channel { overflow: hidden; position: absolute; width: 34%; height: 700px; margin-left: 95px; left: 53%; bottom: 0;}
+#right_channel > ul#channelImgCon { width: 522px; height: 500px; position: relative; }
+#right_channel > ul#channelImgCon > li.channel { width: 100%; height: 100%; position: absolute; left: 0; top: 0; background-size: cover; background-repeat: no-repeat; }
+
+/*visual images*/
+#right_channel > ul#channelImgCon > li.cPangsu { left: 0%; background-image: url("../img/channel/pangsu.webp"); }
+#right_channel > ul#channelImgCon > li.cChallenge { left: 0%; background-image: url("../img/channel/challenge.webp"); }
+
+/*text*/
+.channelBlankBox { height: 520px; }
+.channelBlankBox:hover { cursor: pointer; }
+.channelName { text-align: left; font-size: 23px; font-weight: bold; overflow: hidden; }
+.type { border: 1px solid black; padding: 0 5px; font-size: 20px; }
+.channelName:hover { cursor: pointer; text-decoration: underline; }
+
+/*arrow*/
+#right_channel > img.arrow { width: 25px; top: 50%; }
+#right_channel > img.arrow_right { left: 92%; }
+#right_channel > img.arrow_left { left: 3%; }
+
+/*content4 Video*/
+#video { position: relative; }
+#video #left_video { width: 1130px; height: 700px; overflow: hidden; position: absolute; z-index: 2; top: 10%; }
+#video #right_video_comment { width: 360px; position: absolute; left: 76%; bottom: 30%; z-index: 1; display: inline-block; }
+#upper_comment { width: 360px; height: 146px; overflow-y: scroll; }
+#upper_comment h3 { font-size: 23px; font-family: "맑은 고딕"; font-weight: bold; }
+#down_side:hover { cursor: pointer; text-decoration: underline; }
+#down_side span { font-weight: bold; margin-top: 30px;}
+#down_side { margin-top: 30px;}
+#forBackGround_white { position: relative; background-color: white; z-index: 1; height: 250px; top: 0; }
+#forBackGround { position: relative; background-color: #F7F8F8; z-index: 0; height: 600px; top: 80%; }
+
+/*content5 News*/
+#news { position: relative; }
+#left_news { margin: 50px 50px 50px 80px;  }
+/*paging*/
+#left_news ul#newsPaging { width: 100%; height: 30px; position: absolute; bottom: 88%; text-align: right; z-index: 1; margin-right: 10px; }
+#left_news ul#newsPaging li.newsDot { display: inline-block; font-size: 13px; color: #ECECEC; margin: 0 2px; cursor: pointer; text-shadow: 1px 1px 1px black; position: relative; bottom: 20%;}
+#left_news ul#newsPaging li.newsDot.on { color: black; }
+
+/*visual*/
+#left_news { overflow: hidden; position: relative; width: 45%; height: 500px; }
+#left_news > ul#newsImgCon { width: 300px; height: 210px; position: relative; padding-top: 10px; }
+#left_news > ul#newsImgCon > li.news { width: 100%; height: 100%; position: absolute; left: 0; top: 0; background-size: cover; background-repeat: no-repeat; }
+
+/*visualImg*/
+#left_news > ul#newsImgCon > li.store { left: 0%; background-image: url("../img/news/store.webp"); }
+#left_news > ul#newsImgCon > li.uber { left: 0%; background-image: url("../img/news/uber.webp"); }
+#left_news > ul#newsImgCon > li.k9flex { left: 0%; background-image: url("../img/news/k9flex.webp"); }
+#left_news > ul#newsImgCon > li.blur { opacity: 0.5; }
+
+/*text*/
+.newsBlankBox { height: 220px; }
+.newsBlankBox:hover { cursor: pointer; }
+.newsdate { text-align: left; font-size: 14px; opacity: 0.7; margin-top: 10px; }
+.newsdate:hover { cursor: pointer; }
+.newsName { text-align: left; font-size: 18px; font-weight: bold; }
+.newsName:hover { cursor: pointer; text-decoration: underline; }
+
+/*eventArrow*/
+#left_news > img.arrow { width: 25px; top: 30%; }
+#left_news > img.arrow_right { left: 92%; }
+#left_news > img.arrow_left { left: 3%; }
+
+/*Notice*/
+#news_right { position: absolute; left: 62%; top: 0; }
+#right_notice ul {width: 520px; height: 335px; overflow: hidden; }
+#right_notice ul li { width: 200px; height: 90px; text-align: left; border: 1px solid #D9D9D9; float: left; padding: 25px; }
+#right_notice ul li span { font-size: 16px; height: 50px; overflow-y: hidden; }
+#right_notice ul li div { font-size: 14px; opacity: 0.7; }
+#right_notice ul li:hover { cursor: pointer; color: white; background-color: #05141F; }
+
+/*footer*/
+#footer { background-color: #05141F; color: rgba(255,255,255,0.6); height: 960px;}
+#footer > img { width: 100px; padding: 100px 0 0 115px; }
+#inner { overflow: hidden; padding-top: 0; }
+.footer { float: left; }
+.lnb { margin: 60px 300px 50px 100px; }
+.lnb > ul > li { color: white; font-weight: bold; padding: 5px 15px; font-size: 18px; }
+.lnb > ul > li:hover { cursor: pointer; text-decoration: underline; }
+.kind1 { margin: 60px; }
+.kind1 ul li span:hover {cursor: pointer; color: white; text-decoration: underline; }
+.kind2 { margin: 60px; }
+.kind2 ul li span:hover {cursor: pointer; color: white; text-decoration: underline; }
+.whiteFooter { color: white; }
+.bold { color: white; font-weight: bold; }
+
+/*award*/
+.award { margin: 60px 20px; width: 290px; height: 500px; }
+.award ul li { display: block; }
+.award ul li img { width: 52px; float: left; margin: 1px 0; }
+.award ul li span { font-size: 12px; padding-left: 10px;}
+.award>ul>li>span>span { padding-left: 10px;}
+.web:hover { cursor: pointer; }
+
+/*inner_bottom1*/
+.inner_bottom1 { position: relative; }
+.left_footer ul {overflow: hidden; }
+.left_footer ul li { float: left; padding: 0 13px; }
+.left_footer ul li img { width: 29px; cursor: pointer; }
+.left_footer ul li img.members { width: 90px; padding-top: 5px; }
+.left_footer ul li img.blog { width: 50px; }
+.left_footer ul li img.carpience { width: 36px; }
+.left_footer ul li img.instagram { width: 22px; }
+
+/*left_footer*/
+.left_footer { position: absolute; bottom: 20px; left: 7%; }
+/*right_footer*/
+.right_footer { float: right; margin-right: 100px; }
+.right_footer>img { width: 45px; margin-top: 10px; position: absolute; bottom: 34px; left: 62%; }
+.right_footer span { padding: 10px; font-size: 14px; position: absolute; bottom: 30px; left: 66%; }
+.right_footer #sites { color: #777171; background-color: #05141F; padding: 5px 10px; margin-bottom: 10px; font-size: 16px; position: absolute; bottom: 24px; left: 72%; cursor: pointer; }
+
+/*inner_bottom2*/
+.inner_bottom2 { font-size: 12px; margin-top: 20px; }
+.inner_bottom2 ul { overflow: hidden; padding-left: 100px; }
+.inner_bottom2 ul li { float: left; }
+.inner_bottom2 ul li span { padding: 0 5px; }
+.inner_bottom2 ul li span:hover { cursor: pointer; color: white; text-decoration: underline; }
+.inner_bottom2 .white_span { color: white; font-weight: bold; }
+.bottom_left { padding-left: 105px; padding-top: 10px;}
+
+/*inner_bottom3*/
+.home { display: inline-block; margin: 60px 100px 20px 100px; }
+.home:hover { cursor: pointer; text-decoration: underline; }
+.home>img { width: 10px; padding: 0 5px; }
+.last { float: right; display: inline-block; margin: 60px 100px 20px 100px;  }
